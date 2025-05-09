@@ -1,0 +1,137 @@
+
+.comm_ex_item {
+  background-color: #0D1B2A;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.ex_img_fig {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  background-color: #1a1a1a;
+}
+
+.ex_img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ex_img_fig figcaption {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+  color: #D4AF37;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.comm_ex_item:hover .ex_img_fig figcaption {
+  opacity: 1;
+}
+
+.ex_guide {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ex_sbj {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #D4AF37;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ex_range,
+.ex_loc_row {
+  font-size: 0.85rem;
+  color: #bbb;
+  display: flex;
+  gap: 8px;
+}
+
+.ex_date, .ex_loc, .ex_place {
+  white-space: nowrap;
+}
+
+.ex_top {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 2;
+}
+
+.ex_top_flag .flag {
+  background-color: #D4AF37;
+  color: #0D1B2A;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+}
+
+.btn_ico.scrap {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #D4AF37;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+
+  &.on {
+    background-color: #D4AF37;
+    color: #0D1B2A;
+  }
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}

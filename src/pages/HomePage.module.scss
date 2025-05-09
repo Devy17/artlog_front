@@ -1,0 +1,20 @@
+/* src/pages/HomePage.module.scss */
+
+.homePageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* 헤더 높이만큼 상단 패딩을 주어 콘텐츠가 헤더에 가려지지 않도록 합니다. */
+    padding-top: 60px; /* Header의 height와 동일하게 설정 */
+  }
+  
+  .main {
+    flex-grow: 1; /* 남은 공간을 채우도록 */
+    /* 메인 콘텐츠 영역 자체를 중앙 정렬 */
+    /* max-width는 하위 섹션의 cont_inner에서 제어하므로 여기서는 제거 */
+    /* margin: 0 auto; 도 하위 섹션에서 제어 */
+    width: 100%; /* 전체 너비 사용 */
+  }
+  
+  /* 하위 섹션의 .cont_inner에서 중앙 정렬 및 최대 너비를 제어합니다. */
+  
